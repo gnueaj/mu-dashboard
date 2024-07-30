@@ -11,6 +11,8 @@
 
   --button-bg-color: #cacaca;
   --button-hover-bg-color: #aaaaaa;
+
+  --config-btn-wrapper-bg-color: #f3f3f3;
 }
 
 * {

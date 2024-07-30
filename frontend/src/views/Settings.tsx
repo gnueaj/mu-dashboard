@@ -4,6 +4,7 @@ import Title from "../components/Title";
 import TrainingConfiguration from "../components/TrainingConfiguration";
 import UnlearningConfiguration from "../components/UnlearningConfiguration";
 import DefenseConfiguration from "../components/DefenseConfiguration";
+import ConfigurationBox from "../components/ConfigurationBox";
 
 const API_URL = "http://localhost:8000";
 
@@ -30,6 +31,7 @@ export default function Settings() {
   return (
     <section>
       <Title title="Settings" />
+      <ConfigurationBox />
       <TrainingConfiguration setTrainedModels={setTrainedModels} />
       <UnlearningConfiguration trainedModels={trainedModels} />
       <DefenseConfiguration />

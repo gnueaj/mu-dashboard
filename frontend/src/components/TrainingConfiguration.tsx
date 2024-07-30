@@ -24,10 +24,10 @@ const API_URL = "http://localhost:8000";
 export const initialState = {
   model: "ResNet-18",
   dataset: "CIFAR-10",
-  epochs: 10,
-  batch_size: 64,
-  learning_rate: 0.002,
-  seed: 42,
+  epochs: 30,
+  batch_size: 128,
+  learning_rate: 0.01,
+  seed: 1234,
 };
 
 export const configurationReducer = (

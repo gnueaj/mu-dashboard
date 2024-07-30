@@ -1,0 +1,30 @@
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--config-btn-wrapper-bg-color);
+  color: black;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  margin-top: 3px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 1px 10px;
+  border-radius: 4px;
+  background-color: var(--config-btn-wrapper-bg-color);
+  transition: all 0.5 ease-in-out;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button-selected {
+  cursor: pointer;
+  padding: 1px 10px;
+  border-radius: 4px;
+  background-color: white;
+}
