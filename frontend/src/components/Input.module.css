@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 230px;
 }
 
 .label {
@@ -11,7 +11,7 @@
 }
 
 .input {
-  width: 140px;
+  width: 130px;
   height: 18px;
   padding: 0px 4px;
   text-overflow: ellipsis;

@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
-import ContentBox from "../components/ContentBox";
-import SubTitle from "../components/SubTitle";
 import Input from "../components/Input";
 import { MODELS, DATASET } from "../constants/training";
 import { Status, Props, Timer } from "../types/training_config";
@@ -233,9 +231,8 @@ export default function TrainingConfiguration({ setTrainedModels }: Props) {
   };
 
   return (
-    <ContentBox height={232}>
+    <>
       <div className={styles["subset-wrapper"]}>
-        <SubTitle subtitle="Training Configuration" />
         <div
           id="predefined"
           onClick={handleSectionClick}
@@ -337,13 +334,13 @@ export default function TrainingConfiguration({ setTrainedModels }: Props) {
             <div>
               <label htmlFor="custom-training">
                 {customFile ? (
-                  <div className={styles["upload"]}>
+                  <div className={styles.upload}>
                     <span className={styles["upload-text"]}>
                       {customFile.name}
                     </span>
                   </div>
                 ) : (
-                  <div className={styles["upload"]}>Click to upload</div>
+                  <div className={styles.upload}>Click to upload</div>
                 )}
               </label>
               <input
@@ -361,6 +358,6 @@ export default function TrainingConfiguration({ setTrainedModels }: Props) {
           {isLoading === 1 ? "Cancel" : "Run"}
         </div>
       </div>
-    </ContentBox>
+    </>
   );
 }

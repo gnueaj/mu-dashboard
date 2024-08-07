@@ -12,7 +12,6 @@ import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 import ContentBox from "../components/ContentBox";
-import SubTitle from "../components/SubTitle";
 import Input from "../components/Input";
 import { Status, Props, Timer } from "../types/unlearning_config";
 import { UNLEARNING_METHODS, UNLEARN_CLASSES } from "../constants/unlearning";
@@ -220,9 +219,8 @@ export default function UnlearningConfiguration({ trainedModels }: Props) {
   };
 
   return (
-    <ContentBox height={236}>
+    <>
       <div className={styles["subset-wrapper"]}>
-        <SubTitle subtitle="Unlearning Configuration" />
         <div
           id="predefined"
           onClick={handleSectionClick}
@@ -354,6 +352,6 @@ export default function UnlearningConfiguration({ trainedModels }: Props) {
           {isUnlearning ? "Cancel" : "Run"}
         </div>
       </div>
-    </ContentBox>
+    </>
   );
 }
